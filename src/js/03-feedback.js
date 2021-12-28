@@ -17,7 +17,6 @@ function onFormSubmit(e) {
   e.preventDefault();
 
   if (form['email'].value === '' || form['message'].value === '') {
-    console.log('There is nothing to submit! Fill up the fields!');
     return;
   }
 
