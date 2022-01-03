@@ -14,6 +14,6 @@ function pausedTime() {
   });
 }
 
-const getTimeFromLocalStorage = JSON.parse(localStorage.getItem(CURRENT_TIME_KEY));
+const getTimeFromLocalStorage = JSON.parse(localStorage.getItem(CURRENT_TIME_KEY) || 0);
 
 player.setCurrentTime(getTimeFromLocalStorage);
